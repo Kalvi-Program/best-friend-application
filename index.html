@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Friend Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Best Friend Application</h1>
+        <img src="./assets/friends.png" alt="friends" />
+        <p>
+          Hello there I need a new best friend...because the last one escaped 😊
+          not my though, I'm a little moody but super cool.
+        </p>
+        <h3>Wanna be friends?</h3>
+      </div>
+      <form
+        action="https://formsubmit.co/6bd43367a552650433751282a1494165"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Best Friend Application" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://kalvi-program.github.io/best-friend-application/index.html"
+        />
+
+        <label class="question name">What is your name?</label>
+        <input required type="text" name="name" id="name" placeholder="John" />
+
+        <label class="question nick-name"
+          >What do you want to call me as?</label
+        >
+        <input
+          required
+          type="text"
+          name="nickname"
+          id="nickname"
+          placeholder="Andy"
+        />
+
+        <label class="question genre" for="genre"
+          >Favorite TV show, movie or series genres:</label
+        >
+        <br />
+        <input type="checkbox" name="anime" id="anime" />
+        <label for="anime">Anime</label>
+        <input type="checkbox" name="horror" id="horror" />
+        <label for="horror">Horror</label>
+        <input type="checkbox" name="sci-fi" id="sci-fi" />
+        <label for="sci-fi">Sci-Fi</label>
+        <input type="checkbox" name="comedy" id="comedy" />
+        <label for="comedy">Comedy</label>
+        <br />
+        <input type="checkbox" name="drama" id="drama" />
+        <label for="drama">Drama</label>
+        <input type="checkbox" name="action" id="action" />
+        <label for="action">Action</label>
+        <input type="checkbox" name="romance" id="romance" />
+        <label for="romance">Romance</label>
+        <br />
+        <label class="question" for="cuisine"
+          >What's your favorite cuisine?</label
+        >
+        <br />
+
+        <select name="cuisine" id="cuisine">
+          <option value="indian">Indian</option>
+          <option value="italian">Italian</option>
+          <option value="chinese">Chinese</option>
+          <option value="american">American</option>
+          <option value="japanese">Japanese</option>
+        </select>
+        <br />
+
+        <label class="question" for="preferences">What do you prefer?</label>
+        <ol name="preferences">
+          <li>
+            <input type="radio" required name="drink" id="tea" value="tea" />
+            <label for="drink">Tea</label>
+            <input type="radio" name="drink" id="coffee" value="coffee" />
+            <label for="drink">Coffee</label>
+          </li>
+          <li>
+            <input
+              required
+              type="radio"
+              name="season"
+              id="summer"
+              value="summer"
+            />
+            <label for="season">Summer</label>
+            <input type="radio" name="season" id="winter" value="winter" />
+            <label for="season">Winter</label>
+          </li>
+          <li>
+            <input
+              required
+              type="radio"
+              name="location"
+              id="beach"
+              value="beach"
+            />
+            <label for="location">Beach</label>
+            <input
+              type="radio"
+              name="location"
+              id="mountains"
+              value="mountains"
+            />
+            <label for="location">Mountains</label>
+          </li>
+          <li>
+            <input type="radio" required name="time" id="night" value="night" />
+            <label for="time">Night Owl</label>
+            <input type="radio" name="time" id="morning" value="morning" />
+            <label for="time">Early Bird</label>
+          </li>
+        </ol>
+
+        <label class="question memories" for="memories"
+          >What are your interests? Let's see if ours match 😁</label
+        >
+        <textarea
+          required
+          name="interests"
+          id="interests"
+          cols="30"
+          rows="5"
+          placeholder="I like..."
+        ></textarea>
+
+        <input type="submit" value="Let's Be Friends" />
+      </form>
+    </section>
+  </body>
+</html>
